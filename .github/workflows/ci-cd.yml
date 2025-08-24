@@ -21,8 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Jest globally
+        run: npm install -g jest
+
       - name: Run tests
-        run: npm test
+        run: jest
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
