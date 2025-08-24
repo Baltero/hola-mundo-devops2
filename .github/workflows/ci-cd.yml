@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,9 +34,3 @@ jobs:
         run: |
           docker build -t tuusuario/hola-mundo-devops:latest .
           docker push tuusuario/hola-mundo-devops:latest
-
-      - name: Deploy to Render
-        uses: render-examples/deploy-action@v1
-        with:
-          apiKey: ${{ secrets.RENDER_API_KEY }}
-          serviceId: ${{ secrets.RENDER_SERVICE_ID }}
