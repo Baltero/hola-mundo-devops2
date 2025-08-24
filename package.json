@@ -4,7 +4,7 @@
   "description": "Aplicación web de prueba DevOps CI/CD",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest"
   },
   "author": "Baltero",
   "license": "ISC",
