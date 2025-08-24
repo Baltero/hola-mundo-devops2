@@ -35,5 +35,5 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t tuusuario/hola-mundo-devops:latest .
-          docker push tuusuario/hola-mundo-devops:latest
+          docker build -t baltero/hola-mundo-devops:latest .
+          docker push baltero/hola-mundo-devops:latest
